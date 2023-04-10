@@ -1,6 +1,21 @@
-<%= @products.each do |product| %>
-    <%= product.name %><br/>
-    <%= product.description %><br/>
-    <%= product.price %><br/>
-    <%= product.furniture_style %><br/>
-<% end %>
+<div class="d-flex flex-row card">
+
+    <div class="border-end">
+        <div class="">
+            <%= link_to "Metal Rack Furnitures", racks_path %>
+        </div>
+
+        <div class="">
+            <%= link_to "Metal Office Furnitures", offices_path %>
+        </div>
+
+        <div class="">
+            <%= link_to "Metal School Furnitures", schools_path %>
+        </div>
+    </div>
+
+
+    <div class="mx-5">
+        <p>Content</p>
+    </div>
+</div>

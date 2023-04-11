@@ -35,6 +35,8 @@ gem "font-awesome-rails"
 
 gem 'kaminari'
 
+gem 'activestorage-validator'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

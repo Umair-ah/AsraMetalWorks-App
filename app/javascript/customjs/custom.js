@@ -4,8 +4,10 @@ import * as FilePond from 'filepond';
 // Import the plugin code
 import FilePondPluginImagePreview from 'filepond-plugin-image-preview';
 
+import FilePondPluginFileValidateType from 'filepond-plugin-file-validate-type';
+
 // Register the plugin
-FilePond.registerPlugin(FilePondPluginImagePreview);
+FilePond.registerPlugin(FilePondPluginImagePreview, FilePondPluginFileValidateType);
 
 
 document.addEventListener("turbo:load", loadFilePond);
@@ -20,5 +22,6 @@ function loadFilePond(){
         storeAsFile: true,
         allowMultiple: true,
         allowReorder: true,
+        acceptedFileTypes: ['image/*'],
     });
 }

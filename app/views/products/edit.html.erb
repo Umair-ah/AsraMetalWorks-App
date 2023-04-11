@@ -4,12 +4,12 @@
         <div class="row">
             <div class="col col-md-3">
                 <%= form.label :name %>
-                <%= form.text_field :name, class:"form-control"%>
+                <%= form.text_field :name, class:"form-control", required: true%>
             </div>
 
             <div class="col col-md-3">
                 <%= form.label :price %>
-                <%= form.number_field :price, class:"form-control" %>
+                <%= form.number_field :price, class:"form-control" , required: true%>
             </div>
 
         </div>
@@ -17,14 +17,14 @@
         <div class="row">
             <div class="col">
                 <%= form.label :description %>
-                <%= form.text_area :description, class:"form-control" %>
+                <%= form.text_area :description, class:"form-control", required: true %>
             </div>
         </div>
 
         <div class="row">
             <div class="col col-md-3">
                 <%= form.label :furniture_style %>
-                <%= form.select :furniture_style, ['Metal_Racks_Furniture', 'Metal_Office_Furniture', 'Metal_School_Furniture'], { prompt: 'Select' }, class:"form-select" %>
+                <%= form.select :furniture_style, ['Metal_Racks_Furniture', 'Metal_Office_Furniture', 'Metal_School_Furniture'], { prompt: 'Select' }, class:"form-select" , required: true%>
             </div>
         </div>
 

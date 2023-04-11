@@ -14,3 +14,11 @@
  *= require_self
  */
 @import "bootstrap";
+
+.card {
+    transition: all 0.3s;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}

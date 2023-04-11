@@ -1,0 +1,39 @@
+<%= form_for @product do |form| %>
+    <h1 class="text-center my-4">Edit Product</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-3">
+                <%= form.label :name %>
+                <%= form.text_field :name, class:"form-control"%>
+            </div>
+
+            <div class="col col-md-3">
+                <%= form.label :price %>
+                <%= form.number_field :price, class:"form-control" %>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <%= form.label :description %>
+                <%= form.text_area :description, class:"form-control" %>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-md-3">
+                <%= form.label :furniture_style %>
+                <%= form.select :furniture_style, ['Metal_Racks_Furniture', 'Metal_Office_Furniture', 'Metal_School_Furniture'], { prompt: 'Select' }, class:"form-select" %>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+            <%= form.submit "Edit Product", class:" mt-3 btn btn-primary" %>
+            </div>
+        </div>
+    </div>
+
+
+<% end %>

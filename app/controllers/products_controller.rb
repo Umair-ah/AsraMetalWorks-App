@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-    before_action :authenticate_admin!
+    before_action :authenticate_admin!, except: [:index, :show]
     before_action :set_product, except: %i[new create index]    
 
     def index
@@ -24,7 +24,7 @@ class ProductsController < ApplicationController
     end
 
     def update
-        if @product.update(product_params)
+        if @product.update(products_params)
             redirect_to root_path, notice: "Product Updated"
         end
     end
@@ -46,7 +46,7 @@ class ProductsController < ApplicationController
         end
 
         def products_params
-            params.require(:product).permit(:admin_id, :name, :description, :furniture_style, :price, images: [])
+            params.require(:product).permit(:admin_id, :name, :description, :furniture_style, :price, :image, pics: [])
         end
     
 

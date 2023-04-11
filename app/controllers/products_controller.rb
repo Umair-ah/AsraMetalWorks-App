@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
     before_action :set_product, except: %i[new create index]    
 
     def index
-        @products = Product.all
+        @products = Product.all.page(params[:page]).per(5)
     end
 
     def new

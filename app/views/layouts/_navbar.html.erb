@@ -24,12 +24,12 @@
 
         <% if current_admin %>
             
-            <li class="nav-item">
-                <%= button_to "Sign Out", destroy_admin_session_path, method: :delete, class:"nav-link text-white", style:"background:none; border:none;" %>
+            <li>
+                <%= button_to "Sign Out", destroy_admin_session_path, method: :delete, class:"btn btn-primary", style:"margin-bottom: 20px;" %>
             </li>
 
-            <li class="nav-item">
-                <%= link_to "Add A Product", new_product_path, class:"nav-link text-white" %>
+            <li >
+                <%= link_to "Add A Product", new_product_path, class:"text-white", style:"text-decoration: none;" %>
             </li>
       
         <% end %>

@@ -14,4 +14,24 @@
     <%= render "layouts/navbar"%>
     <%= yield %>
   </body>
+  <footer class="flex-shrink-0 py-4 bg-dark text-white-50">
+
+    <div class="container">
+       <div class="row gy-4 gx-5">
+          <div class="col">
+              <h5 class="h1 text-white">Asra Metal Works</h5>
+              <p class="small" style="font-size:15px; color:white;">Behind Tiny Pearls School 2nd Cross Khaja Colony, Gulbarga, Kalaburagi-585104, Karnataka, India</p>
+              <p class="small" style="font-size:13px; color:white;"> Contact Us &#9990; 998-656-6610</p>
+          </div>
+
+          <div class="col">
+            <h3 style="color:white;">Quick Links</h3>
+            <ul>
+              <li><%= link_to 'Products', products_path, style:" color: white; text-decoration: none;" %></li>
+            </ul>
+          
+          </div>
+        </div>
+    </div> 
+  </footer>
 </html>

@@ -17,7 +17,9 @@
       <div class=" d-flex mx-3 gap-3" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
         <li class="nav-item">
-          <%= link_to "Admin", new_admin_session_path, class:"nav-link navbar-hov", style:"display: flex; justify-content: center; align-items: center; background: transparent; margin: 0; border: 0;"%>
+          <% unless current_admin %>
+            <%= link_to "Admin", new_admin_session_path, class:"nav-link navbar-hov", style:"display: flex; justify-content: center; align-items: center; background: transparent; margin: 0; border: 0;"%>
+          <% end %>
         </li>
       </ul>
       </div>

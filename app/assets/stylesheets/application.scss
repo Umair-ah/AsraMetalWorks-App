@@ -13,10 +13,11 @@
  *= require_tree .
  *= require_self
  */
- $primary: #ffc506;
+$primary: #ffc506;
 @import "bootstrap";
 @import "font-awesome";
-
+@import "filepond";
+@import "filepond-plugin-image-preview";
 .card {
     transition: all 0.3s;
 }
@@ -73,3 +74,11 @@ a {
     transition-delay: 0.4s;
     color: aliceblue;
   }
+
+.filepond--item {
+    width: calc(50% - 0.5em);
+}
+
+.filepond--root {
+    max-height: 20em;
+}

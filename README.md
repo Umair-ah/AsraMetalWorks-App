@@ -1,24 +1,9 @@
-# README
+# Simple Web App For Asra Metal Works
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- products upload (admin access)
+- automatic products update on the web page
+- mobile responsive
+- customers view the products
+- pagination done
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

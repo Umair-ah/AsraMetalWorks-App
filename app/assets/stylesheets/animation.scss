@@ -1,0 +1,27 @@
+.fade-in-image {
+    animation: fadeIn 3.7s;
+
+}
+
+
+.page-animate {
+    animation: fadeIn 1.5s;
+}
+
+
+@keyframes fadeIn {
+    from{
+      opacity: 0;
+      transform: rotateX(-10deg);
+  
+    }
+  
+  
+    to{
+      opacity: 1;
+      transform: rotateX(0);
+  
+    }
+  
+  
+  }
